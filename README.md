@@ -22,3 +22,13 @@ The Example consists of HTTPD server demo with demostration of URI handling :
             4. "curl -X PUT -d "1" 192.168.43.130:80/ctrl" -  enable /hello and /echo handlers
 
 See the README.md file in the upper level 'examples' directory for more information about examples.
+
+## WebSocket demo
+
+The WebSocket endpoint in this demo is `/ws`.
+
+You may need a WebSocket testing tool to play with it, for example, [websocat](https://github.com/vi/websocat):
+
+```
+websocat ws://192.168.43.192/ws --ping-interval=3
+```
